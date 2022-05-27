@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col items-center justify-center">
-    <div class="grid w-full lg:w-3/5 px-4 max-w-screen-xl gap-x-8 gap-y-8 grid-cols-1 lg:grid-cols-3 sm:grid-cols-3 ">
+    <div class="grid w-full lg:w-3/5 sm:w-full px-4 max-w-screen-xl gap-x-8 gap-y-8 grid-cols-1 lg:grid-cols-3 sm:grid-cols-3 ">
       <div
         @click="test(drug.id)"
         v-for="(drug, index) in searchResult"

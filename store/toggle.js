@@ -3,7 +3,11 @@ export const state = () => ({
   isDosageOpen: false,
   isFrequencyOpen: false,
   isDurationOpen: false,
-  isNoteOpen:false
+  isNoteOpen: false,
+  toast: {
+    isToastOpen: false,
+    msg: '',
+  },
 })
 
 export const actions = {
@@ -21,6 +25,9 @@ export const actions = {
   },
   toggleNote({ commit }, payload) {
     commit('toggleNote', payload)
+  },
+  toggleToast({ commit }, payload) {
+    commit('toggleToast', payload)
   },
 }
 
@@ -45,7 +52,11 @@ export const mutations = {
   toggleDuration(state, payload) {
     state.isDurationOpen = payload
   },
-  toggleNote(state,payload) {
+  toggleNote(state, payload) {
     state.isNoteOpen = payload
+  },
+  toggleToast(state, payload) {
+    state.toast.isToastOpen = payload.status
+    state.toast.msg = payload.msg
   },
 }

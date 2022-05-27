@@ -1,7 +1,7 @@
 <template>
   <div
     style="overflow: auto"
-    class="mt-16 m-auto w-9/12 lg:w-full flex flex-row justify-center"
+    class="mt-16  w-full lg:w-full flex flex-row justify-center"
   >
     <div
       v-for="(item, index) in categories"
@@ -11,7 +11,7 @@
       <div
         :class="color"
         tabindex="index"
-        class="px-6 py-3 mb-6 rounded-lg test"
+        class="px-6 py-3 mb-6 rounded-lg "
         @click="filterDrugsByCategory(item)"
       >
         <p style="font-family: 'Lexend', sans-serif;" class="text-quickSearchText font-medium">{{ item }}</p>
