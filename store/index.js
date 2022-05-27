@@ -3,7 +3,7 @@ export const state = () => ({
   allDrugs: drugs,
   searchResult: [...drugs],
   isSearchActive : false,
-  autoSearchResults : []
+  autoSearchResults : [] 
 })
 
 export const actions = {
