@@ -17,5 +17,6 @@ export default {}
 
 *{
     font-family: 'Lexend', sans-serif;
+    
 }
 </style>
